@@ -1,5 +1,5 @@
 @media screen and (max-width: 1440px) {
-.gnb a {font-size: var(--font-small);}
+
 .slider > li > .desc {
   margin-top: 40px;
   margin-left: 40px;
@@ -28,8 +28,9 @@
 
 
 @media screen and (max-width: 1200px) {
-header{ height: 50px;}
-#section1 { margin-top: 40px;}
+  
+section {padding: 0 68px; margin: 120px auto;}
+/* #section1 { margin-top: 40px;} */
 
 .slider > li > .desc {
   margin-top: 30px;
@@ -60,14 +61,18 @@ header{ height: 50px;}
 }
 
 
+.slam__btn{
+  font-size: var(--font-small);
+  padding: 10px 24px 8px 24px;
+}
+
+
 } /* 1200px 미만 */
 
 
 
-
-
 @media screen and (max-width: 1024px) {
-nav, section {padding: 0 36px;}
+section {padding: 0 36px;}
 footer .container {padding: 0 36px;}  
 .upperFoot .container, 
 .lowerFoot .container { padding: 0 36px;}
@@ -87,72 +92,16 @@ footer .container {padding: 0 36px;}
   padding-bottom: 16px;
 }
 
-.link__btn {padding: 9px 22px;}
+.link__btns {padding: 9px 22px 7px 22px;}
+.slam__btn{
+  font-size: var(--font-small);
+  padding: 9px 22px 7px 22px;
+}
 
 .user__menu li.user, 
 .user__menu li.favorite, 
 .user__menu li.help { display: none;}
 .user__menu li.cart a img {width: 20px;}
-
-/* 모바일용 햄버거 눌렀을 때 상세메뉴 정리 */
-.nav .mobile_header, nav .mobile_menu {display: none;}
-.mobile_menu, .mobile_header, .hamburger {display: block;}
-nav.active {
-  display: block;
-  position: absolute;
-  right: -120%;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: left;
-}
-.gnb li:nth-child(n+2) {display: none;}
-
-nav.active > .gnb {
-  display: block;
-  align-items: left;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: fit-content;
-}
-nav.active .gnb > li:nth-child(1){display: none;}
-nav.active .user__menu li, .gnb li {
-  width: 100%;
-}
-nav.active > .user__menu li, nav.active > .gnb li >a {
-  display: block;  width: 100%;
-  font-weight: var(--weight-regular);
-  padding: 14px 0; font-size: var(--font-medium);
-}
-nav.active > .nav__right > .user__menu li,
-nav.active .hamburger {display: none;}
-
-nav.active .mobile_header, 
-nav.active .mobile_menu, 
-nav.active .mobile_menu li {
-  display: flex; width: 100%; 
-  justify-content: space-between;
-}
-
-nav.active .mobile_menu {flex-direction: column;}
-nav.active .mobile_menu li a {
-  display:block; width: 100%;
-  display: flex; justify-content: space-between;
-  padding: 10px 0; font-size: var(--font-regular);
-  font-weight: var(--weight-light);
-  border-bottom: 1px solid #e5e5e5;
-  align-items: center;
-}
-.mobile_header {padding: 8px 10px 10px 8px; border-bottom: 1px solid #e5e5e5;}
-.mobile_header h2 a img {width: 24px;}
-.mobile_header > button.close {
-  font-size: var(--font-small);
-  line-height: 24px;
-  padding:0;
-}
 
 /* 신상품 슬라이드 부분 */
 .new-control {
@@ -207,7 +156,6 @@ nav.active .mobile_menu li a {
 
 @media screen and (max-width: 960px) {
 .choose__wrap > ul {align-items: flex-start;}
-header{ height: 40px;}
 section {margin: 40px auto 64px auto;}
 .gnb li a >.logo {padding: 0px;}
 
@@ -222,7 +170,7 @@ input[type="search"]::placeholder {
 }
 
 .choose__wrap > ul {flex-wrap: wrap;}
-.choose__wrap > ul > li {width: 24.5%;}
+.choose__wrap > ul > li {width: 24%;}
 
 .choose__wrap > ul > li > a > h6 {
 font-weight: var(--weight-light);
@@ -246,7 +194,7 @@ font-size: var(--font-small);
   font-size: var(--font-small);
   padding-bottom: 14px;
 }
-.link__btn { padding: 8px 22px;}
+.link__btns { padding: 8px 22px 6px 22px;}
 .new-container{
   padding-bottom: 20%;
   min-height: 300px;
@@ -254,6 +202,13 @@ font-size: var(--font-small);
 
 .slider > li .desc p:nth-child(2) {
   font-size: var(--font-extrasmall);
+}
+
+.slam__btn{
+  display: block; background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: var(--font-small);
 }
 
   /* footer */
@@ -289,6 +244,14 @@ footer .lowerFoot {
 }
 
 .upperFoot {padding: 0;}
+button#scroll__up, button#scroll__down {
+  right: 16px;
+  width: 30px;
+  height: 30px;
+}
+button#scroll__up {bottom: 90px;}
+button#scroll__down {bottom: 40px; line-height: 45px;}
+
 
 } /* 960px 이하 */
 

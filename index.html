@@ -20,8 +20,7 @@
   <link rel="shortcut icon" href="./imgs/favicon.jpg">
   <!-- style -->
   <meta property="og:title" content="Converse Korea" />
-  <meta property="og:url" content="https://github.com/Maryable/Converse-redesign" />
-  <meta property="og:image" content="./imgs/converse_Korea.jpg" />
+  <meta property="og:image" content="https://wallpaper.dog/large/852227.jpg" />
   <meta property="og:description" content="컨버스 홈페이지를 다시 디자인하여 반응형으로 코딩한 사이트입니다.." />
   <!-- og tags -->
 
@@ -44,266 +43,228 @@
   <!-- JS script -->
 </head>
 
-  <!-- 접근성을 위한 스킵메뉴 -->
-  <div id="skip">
-    <a rel="bookmark" href="section2">컨버스 스니커즈 종류별로 보기</a>
-    <a rel="bookmark" href="#section3">새로 출시된 컬렉션</a>
-    <a rel="bookmark" href="#section5">유니크 디자인 컬렉션 모아보기</a>
-    <a rel="bookmark" href="#section7">컨버스와 슬램잼이 함께한 스트릿 스타일 보기</a>
-    <a rel="bookmark" href="#section8">컨버스 커뮤니티</a>
-  </div>
-  <!-- 스킵메뉴 -->
-
 <body>
-  <header>
-    <nav class="nav">
-      <div class="mobile_header">
-        <h2><a href="#"><img src="./imgs/mobile_logo.png" alt="mobile_logo"></a></h2>
-        <button class="close"><i class="xi-close-thin"></i></button>
-      </div>
-      <ul class="gnb">
-        <li><a href="./index.html"><h1 class="logo"><img src="./imgs/main-logo.png" alt="Logo" style="width: 120px;"></h1></a></li>
-        <li><a href="#">신발</a></li>
-        <li><a href="#">의류</a></li>
-        <li><a href="#">아동</a></li>
-        <li><a href="#">런칭캘린더</a></li>
-        <li><a href="#">회원전용</a></li>
-      </ul> <!-- main__menu -->
-      <div class="nav__right">
-        <div class="search_wrap">
-          <form id="content">
-            <input type="search" name="input" class="input" id="search-input" autofocus placeholder="검색">
-          </form>
-        </div>
-        <ul class="user__menu">
-          <li class="nav__item search"><a href="#"><img src="./imgs/search.svg" alt="search icon"></a></li>
-          <li class="nav__item user"><a href="#"><img src="./imgs/user.svg" alt="user icon"></a></li>
-          <li class="nav__item cart"><a href="#"><img src="./imgs/cart.svg" alt="cart icon"></a></li>
-          <li class="nav__item favorite"><a href="#"><img src="./imgs/heart.svg" alt="favorite icon"></a></li>
-          <li class="nav__item help"><a href="#"><img src="./imgs/help-circle.svg" alt="help icon"></a></li>
-          <li class="hamburger"><a href="#"><img src="./imgs/hamburger_bar.svg" alt="help icon"></a></li>
-        </ul> <!-- user__menu -->
-      </div> <!-- nav__right -->
-      <ul class="mobile_menu">
-        <li><a href="#">마이페이지 <i class="xi-angle-right-min"></i></a></li>
-        <li><a href="#">주문/배송조회 <i class="xi-angle-right-min"></i></a></li>
-        <li><a href="#">고객지원센터 <i class="xi-angle-right-min"></i></a></li>
-        <li><a href="#">로그인 <i class="xi-angle-right-min"></i></a></li>
-      </ul>
-    </nav>
-  </header>
+<? include "header.html"; ?>
+<!-- php header include -->
 
-  <section id="section1">
-    <div class="main-slide"><em class="ir_so">혁신적으로 편안해진 클래식 스타일, 새로운 컬러의 CX 컬렉션을 지금 만나보세요.</em></div>
-    <div class="slide__desc">
-      <h3 class="slide__title">DYNAMIC NIGHTS</h3>
-      <span class="slide__subtitle">혁신적으로 편안해진 클래식 스타일, 새로운 컬러의 CX 컬렉션을 지금 만나보세요.</span>
-      <a href="#" class="link__btn">자세히 보기</a> 
-    </div> 
-  </section>
-  <section id="section2">
-    <div class="choose_your_icon_title">
-      <h4>CHOOSE YOUR ICON</h4>
-      <span><a href="#"><i class="xi-arrow-right"></i>신발 전체보기</a></span>
-    </div> <!-- choose_your_icon_title -->
-    <div class="choose__wrap clearfix">
-      <ul>
-        <li><a href="#"><img src="./imgs/chuckClassic.jpg" alt="척 클래식 모아보기">
-          <h6>Chuck Classic</h6>
-        </a></li>
-        <li><a href="#"><img src="./imgs/chuck70.jpg" alt="척70 모아보기">
-          <h6>Chuck 70</h6>
-        </a></li>
-        <li><a href="#"><img src="./imgs/oneStar.jpg" alt="원스타 모아보기">
-          <h6>One Star</h6>
-        </a></li>
-        <li><a href="#"><img src="./imgs/jackPurcell.png" alt="잭 퍼셀 모아보기">
-          <h6>Jack Purcell</h6>
-        </a></li>
-      </ul>
-    </div>
-  </section>
-  <section id="section3">
-    <div class="new-title">
-      <h4>NEW ARRIVAL</h4>
-    <div class="new-control">
-      <!-- Add Pagination -->
-    <div class="swiper-pagination new-pager"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next new-next"></div>
-    <div class="swiper-button-prev new-prev"></div>
-    </div>
-    </div>
-    <div class="container new-container swiper-container">
-      <ul class="slider swiper-wrapper">
-        <li class="swiper-slide">
-          <div class="desc">
-            <h5>SKIDGRIP</h5>
-            <p>새롭게 태어난 레트로 스타일 스키드그립</p>
-            <p>더보기</p>
-          </div>
-        </li>
-
-        <li class="swiper-slide">
-          <div class="desc">
-            <h5>TROPICAL CHUCK 70</h5>
-            <p>하와이안 빈티지 스타일의 프리미엄 척 70</p>
-            <p>더보기</p>
-          </div>
-        </li>
-
-        <li class="swiper-slide">
-          <div class="desc">
-            <h5>DAINTY CHUCK MULE</h5>
-            <p>해변가와 도시에 모두 어울리는 클래식한 디자인</p>
-            <p>더보기</p>
-          </div>
-        </li>
-
-        <li class="swiper-slide">
-          <div class="desc">
-            <h5>CHUCK TAYLOR SUNSET PALM</h5>
-            <p>트로피컬한 해변의 감성을 더하는 유니크 스타일</p>
-            <p>더보기</p>
-          </div>
-        </li>
-      </ul>
-  </section>
-
-  <section id="section4">
-    <div class="coming-notice">
-      <h3>CONVERSE X COMME des GARÇONS PLAY</h3>
-      <p>COMMING SOON</p>
-      <span>2021. 04. 15 10AM  출시 예정</span>
-      <a href="#" class="coming__btn">자세히 보기</a>
-    </div>
-  </section>
-  <section id="section5">
-    <div class="unique-img">
-      <span class="ir_so">새로운 스타일의 유니크 디자인을 만나보세요.</span>
-    </div>
-    <div class="slide__desc">
-      <h3 class="slide__title">뉴 시즌 유니크 디자인 스니커즈 컬렉션</h3>
-      <p class="slide__subtitle">장인 정신이 깃든 유니크 빈티지 디자인을 만나보세요.</p>
-      <a href="#" class="link__btn">컬렉션 전체 보기</a>
-    </div>
-  </section>
-
-  <section id="section6">
-    <div class="renew-wrap container">
-      <ul>
-        <li><img src="./imgs/renew-coll1.jpg" alt="재활용 모르플론 어퍼로 탄생한 지속 가능성 디자인 척70 1"></li>
-        <li><img src="./imgs/renew-coll2.jpg" alt="재활용 모르플론 어퍼로 탄생한 지속 가능성 디자인 척70 2"></li>
-        <li><img src="./imgs/renew-coll3.jpg" alt="재활용 모르플론 어퍼로 탄생한 지속 가능성 디자인 척70을 만나보세요."></li>
-      </ul>
-      <div class="slide__desc">
-        <h3 class="slide__title">RENEW COLLCTION</h3>
-        <p class="slide__subtitle">빈아이코닉 스타일 + 지속 가능성 디자인 <br>
-          잭퍼셀과 척 70이 재활용 모르플론 어퍼로 재탄생했습니다.</p>
-        <a href="#" class="link__btn">구매하기</a>
-      </div>
-    </div>
-  </section>
-  <section id="section7">
-    <div class="slam__desc">
-      <h3 class="slide__title">CONVERSE X SLAM JAM</h3>
-      <p class="slide__subtitle">스트릿 스타일로 재해석된 아웃도어 라이프스타일의 테크니컬 감성, <br>
-        컨버스 X 슬램잼 컬렉션을 선보입니다.
-      </p>
-      <a href="#" class="link__btn">2021. 04. 25 10AM 출시 예정</a>
-    </div>
-  </section>
-  <section id="section8">
-    <div class="new-title">
-      <h4>CONVERSE COMMUNITY</h4>
-    </div>
-    <!-- Swiper -->
-  <div class="swiper-container community-container">
-    <ul class="swiper-wrapper community-wrap">
-      <li class="swiper-slide"><img src="./imgs/insta1.jpg" alt="instagram users wearing converse1">
-      <p><b>@jasmin99</b> &nbsp; 2 min ago</p></li>
-      <li class="swiper-slide"><img src="./imgs/insta2.jpg" alt="instagram users wearing converse2">
-      <p><b>@jasmin99</b> &nbsp; 1 hour ago</p></li>
-      <li class="swiper-slide"><img src="./imgs/insta3.jpg" alt="instagram users wearing converse3">
-      <p><b>@jasmin99</b> &nbsp; 2 days ago</p></li>
-      <li class="swiper-slide"><img src="./imgs/insta4.jpg" alt="instagram users wearing converse4">
-      <p><b>@jasmin99</b> &nbsp; 4 days ago</p></li>
-      <li class="swiper-slide"><img src="./imgs/insta5.jpg" alt="instagram users wearing converse5">
-      <p><b>@jasmin99</b> &nbsp; 2 months ago</p></li>
-      <li class="swiper-slide"><img src="./imgs/insta6.jpg" alt="instagram users wearing converse6">
-      <p><b>@jasmin99</b> &nbsp; 5 months ago</p></li>
+<section id="section1">
+  <div class="main-slide"><em class="ir_so">혁신적으로 편안해진 클래식 스타일, 새로운 컬러의 CX 컬렉션을 지금 만나보세요.</em></div>
+  <div class="slide__desc">
+    <h3 class="slide__title">DYNAMIC NIGHTS</h3>
+    <span class="slide__subtitle">혁신적으로 편안해진 클래식 스타일, 새로운 컬러의 CX 컬렉션을 지금 만나보세요.</span>
+    <a href="#" class="link__btns">자세히 보기</a>
+    
+  </div> 
+</section>
+<section id="section2">
+  <div class="choose_your_icon_title">
+    <h4>CHOOSE YOUR ICON</h4>
+    <span><a href="#"><i class="xi-arrow-right"></i>신발 전체보기</a></span>
+  </div> <!-- choose_your_icon_title -->
+  <div class="choose__wrap clearfix">
+    <ul>
+      <li><a href="#"><img src="./imgs/chuckClassic.jpg" alt="척 클래식 모아보기">
+        <h6>Chuck Classic</h6>
+      </a></li>
+      <li><a href="#"><img src="./imgs/chuck70.jpg" alt="척70 모아보기">
+        <h6>Chuck 70</h6>
+      </a></li>
+      <li><a href="#"><img src="./imgs/oneStar.jpg" alt="원스타 모아보기">
+        <h6>One Star</h6>
+      </a></li>
+      <li><a href="#"><img src="./imgs/jackPurcell.png" alt="잭 퍼셀 모아보기">
+        <h6>Jack Purcell</h6>
+      </a></li>
     </ul>
   </div>
-  </section>
+</section>
+<section id="section3">
+  <div class="new-title">
+    <h4>NEW ARRIVAL</h4>
+  <div class="new-control">
+    <!-- Add Pagination -->
+  <div class="swiper-pagination new-pager"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next new-next"></div>
+  <div class="swiper-button-prev new-prev"></div>
+  </div>
+  </div>
+  <div class="container new-container swiper-container">
+    <ul class="slider swiper-wrapper">
+      <li class="swiper-slide">
+        <div class="desc">
+          <h5>SKIDGRIP</h5>
+          <p>새롭게 태어난 레트로 스타일 스키드그립</p>
+          <p class="seemore">더보기</p>
+        </div>
+      </li>
 
-  <footer>
-    <article class="upperFoot">
-      <div class="container">
-        <div class="foot_menu">
-          <h5>SUPPORT</h5>
-          <ul>
-            <li><a href="#">고객지원센터</a></li>
-            <li><a href="#">1:1문의</a></li>
-            <li><a href="#">주문/배송조회</a></li>
-          </ul>
-        </div> <!-- foot_menu1 -->
-  
-        <div class="foot_menu">
-          <h5>INFORMATION</h5>
-          <ul>
-            <li><a href="#">매장안내</a></li>
-            <li><a href="#">컨버스 스토리</a></li>
-            <li><a href="#">공지사항</a></li>
-          </ul>
-        </div> <!-- foot_menu1 -->
-  
-        <div class="foot_menu">
-          <h5>POLICY</h5>
-          <ul>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">교환/반품 서비스</a></li>
-          </ul>
-        </div> <!-- foot_menu1 -->
-  
-        <div class="foot_menu">
-          <h5>FAMILY</h5>
-          <ul>
-            <li><a href="#">NIKE</a></li>
-            <li><a href="#">Jordan</a></li>
-            <li><a href="#">언어변경</a></li>
-          </ul>
-        </div> <!-- foot_menu1 -->
-  
-        <div class="foot_menu">
-          <h5>FOLLOW</h5>
-          <ul>
-            <li><a href="#">페이스북</a></li>
-            <li><a href="#">인스타그램</a></li>
-            <li><a href="#">회원전용공간</a></li>
-          </ul>
-        </div> <!-- foot_menu1 -->
-      </div>
-    </article>
-    <article class="lowerFoot">
-      <div class="container">
-        <div class="company_info">
-          <address>
-            (유)컨버스코리아 대표 주형준 개인정보책임 주형준 사업자등록번호 220-88-74818 통신판매업 신고번호: 제2016-서울강남-00478호 통신판매업자 신원정보 확인
-            주소: 서울시 강남구 테헤란로 152 강남파이낸스센터 32F 고객상담팀: 080-987-0182 (상담시간 월-금 : AM 09:00 - PM 05:30, 주말/공휴일 휴무) conversekorea@converse.co.kr (24시간 접수 가능)
-          </address>
-          <p class="copyright">2020 Converse Korea LLC. All Rights Reserved.</p>
-        </div> <!-- company info -->
-        <p class="customer_insure">
-          소비자 피해 보증보험
-          <em>
-            고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 구매안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.
-            보증대상 : 미배송, 반품/환불거부, 쇼핑몰 부도
-          </em>
-          <strong>보증보험 가입사실 확인하기</strong>
-        </p>
-      </div>
-    </article>
-  </footer>
+      <li class="swiper-slide">
+        <div class="desc">
+          <h5>TROPICAL CHUCK 70</h5>
+          <p>하와이안 빈티지 스타일의 프리미엄 척 70</p>
+          <p class="seemore">더보기</p>
+        </div>
+      </li>
+
+      <li class="swiper-slide">
+        <div class="desc">
+          <h5>DAINTY CHUCK MULE</h5>
+          <p>해변가와 도시에 모두 어울리는 클래식한 디자인</p>
+          <p class="seemore">더보기</p>
+        </div>
+      </li>
+
+      <li class="swiper-slide">
+        <div class="desc">
+          <h5>CHUCK TAYLOR SUNSET PALM</h5>
+          <p>트로피컬한 해변의 감성을 더하는 유니크 스타일</p>
+          <p class="seemore">더보기</p>
+        </div>
+      </li>
+    </ul>
+</section>
+
+<section id="section4">
+  <div class="coming-notice">
+    <h3>CONVERSE X COMME des GARÇONS PLAY</h3>
+    <p>COMMING SOON</p>
+    <span>2021. 04. 15 10AM  출시 예정</span>
+    <a href="#" class="link__btns">자세히 보기</a>
+  </div>
+</section>
+<section id="section5">
+  <div class="unique-img">
+    <span class="ir_so">새로운 스타일의 유니크 디자인을 만나보세요.</span>
+  </div>
+  <div class="slide__desc">
+    <h3 class="slide__title">뉴 시즌 유니크 디자인 스니커즈 컬렉션</h3>
+    <p class="slide__subtitle">장인 정신이 깃든 유니크 빈티지 디자인을 만나보세요.</p>
+    <span class="link__btns">컬렉션 보기</span>
+  </div>
+</section>
+
+<section id="section6">
+  <div class="renew-wrap container">
+    <ul>
+      <li><img src="./imgs/renew-coll1.jpg" alt="재활용 모르플론 어퍼로 탄생한 지속 가능성 디자인 척70 1"></li>
+      <li><img src="./imgs/renew-coll2.jpg" alt="재활용 모르플론 어퍼로 탄생한 지속 가능성 디자인 척70 2"></li>
+      <li><img src="./imgs/renew-coll3.jpg" alt="재활용 모르플론 어퍼로 탄생한 지속 가능성 디자인 척70을 만나보세요."></li>
+    </ul>
+    <div class="slide__desc">
+      <h3 class="slide__title">RENEW COLLCTION</h3>
+      <p class="slide__subtitle">빈아이코닉 스타일 + 지속 가능성 디자인 <br>
+        잭퍼셀과 척 70이 재활용 모르플론 어퍼로 재탄생했습니다.</p>
+      <span class="link__btns">구매하기</span>
+    </div>
+  </div>
+</section>
+<section id="section7">
+  <div class="slam__desc">
+    <h3 class="slide__title">CONVERSE X SLAM JAM</h3>
+    <p class="slide__subtitle">스트릿 스타일로 재해석된 아웃도어 라이프스타일의 테크니컬 감성, <br>
+      컨버스 X 슬램잼 컬렉션을 선보입니다.
+    </p>
+    <a href="#" class="slam__btn">2021. 04. 25 10AM 출시 예정</a>
+  </div>
+</section>
+<section id="section8">
+  <div class="new-title">
+    <h4>CONVERSE COMMUNITY</h4>
+  </div>
+  <!-- Swiper -->
+<div class="swiper-container community-container">
+  <ul class="swiper-wrapper community-wrap">
+    <li class="swiper-slide"><img src="./imgs/insta1.jpg" alt="instagram users wearing converse1">
+    <p><b>@jasmin99</b> &nbsp; 2 min ago</p></li>
+    <li class="swiper-slide"><img src="./imgs/insta2.jpg" alt="instagram users wearing converse2">
+    <p><b>@jasmin99</b> &nbsp; 1 hour ago</p></li>
+    <li class="swiper-slide"><img src="./imgs/insta3.jpg" alt="instagram users wearing converse3">
+    <p><b>@jasmin99</b> &nbsp; 2 days ago</p></li>
+    <li class="swiper-slide"><img src="./imgs/insta4.jpg" alt="instagram users wearing converse4">
+    <p><b>@jasmin99</b> &nbsp; 4 days ago</p></li>
+    <li class="swiper-slide"><img src="./imgs/insta5.jpg" alt="instagram users wearing converse5">
+    <p><b>@jasmin99</b> &nbsp; 2 months ago</p></li>
+    <li class="swiper-slide"><img src="./imgs/insta6.jpg" alt="instagram users wearing converse6">
+    <p><b>@jasmin99</b> &nbsp; 5 months ago</p></li>
+  </ul>
+</div>
+</section>
+
+<footer>
+  <article class="upperFoot">
+    <div class="container">
+      <div class="foot_menu">
+        <h5>SUPPORT</h5>
+        <ul>
+          <li><a href="#">고객지원센터</a></li>
+          <li><a href="#">1:1문의</a></li>
+          <li><a href="#">주문/배송조회</a></li>
+        </ul>
+      </div> <!-- foot_menu1 -->
+
+      <div class="foot_menu">
+        <h5>INFORMATION</h5>
+        <ul>
+          <li><a href="#">매장안내</a></li>
+          <li><a href="#">컨버스 스토리</a></li>
+          <li><a href="#">공지사항</a></li>
+        </ul>
+      </div> <!-- foot_menu1 -->
+
+      <div class="foot_menu">
+        <h5>POLICY</h5>
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">교환/반품 서비스</a></li>
+        </ul>
+      </div> <!-- foot_menu1 -->
+
+      <div class="foot_menu">
+        <h5>FAMILY</h5>
+        <ul>
+          <li><a href="#">NIKE</a></li>
+          <li><a href="#">Jordan</a></li>
+          <li><a href="#">언어변경</a></li>
+        </ul>
+      </div> <!-- foot_menu1 -->
+
+      <div class="foot_menu">
+        <h5>FOLLOW</h5>
+        <ul>
+          <li><a href="#">페이스북</a></li>
+          <li><a href="#">인스타그램</a></li>
+          <li><a href="#">회원전용공간</a></li>
+        </ul>
+      </div> <!-- foot_menu1 -->
+    </div>
+  </article>
+  <article class="lowerFoot">
+    <div class="container">
+      <div class="company_info">
+        <address>
+          (유)컨버스코리아 대표 주형준 개인정보책임 주형준 사업자등록번호 220-88-74818 통신판매업 신고번호: 제2016-서울강남-00478호 통신판매업자 신원정보 확인
+          주소: 서울시 강남구 테헤란로 152 강남파이낸스센터 32F 고객상담팀: 080-987-0182 (상담시간 월-금 : AM 09:00 - PM 05:30, 주말/공휴일 휴무) conversekorea@converse.co.kr (24시간 접수 가능)
+        </address>
+        <p class="copyright">2020 Converse Korea LLC. All Rights Reserved.</p>
+      </div> <!-- company info -->
+      <p class="customer_insure">
+        소비자 피해 보증보험
+        <em>
+          고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 구매안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.
+          보증대상 : 미배송, 반품/환불거부, 쇼핑몰 부도
+        </em>
+        <strong>보증보험 가입사실 확인하기</strong>
+      </p>
+    </div>
+  </article>
+</footer>
+
+
+<!-- scroll up and down button -->
+<button id="scroll__up"><i class="xi-angle-up-thin"></i></button>
+<button id="scroll__down"><i class="xi-angle-down-thin"></i></button>
+
 </body>
 </html>

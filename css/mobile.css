@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px) {
-nav, section {padding: 0 16px;}
-section {margin: 40px auto 64px auto; }
+section {margin: 80px auto 64px auto; padding: 0 16px;}
 footer .container {padding: 0 16px;}
 .choose__wrap > ul {align-items: flex-start;}
 
@@ -30,7 +29,7 @@ font-size: var(--font-extrasmall);
   font-size: var(--font-extrasmall);
   padding-bottom: 14px;
 }
-.link__btn { padding: 6px 18px; font-size: var(--font-micro);}
+.link__btns { padding: 6px 18px 4px 18px; font-size: var(--font-micro);}
 
 
 /* new arrival slider */
@@ -94,9 +93,14 @@ min-height: 280px;
   font-size: var(--font-small);
 }
 
-.link__btn {
+.link__btns {
   font-size: var(--font-small);
-  padding: 7px 18px;
+  padding: 7px 18px 5px 18px;
+}
+
+.slam__btn{
+  font-size: var(--font-small);
+  padding: 7px 18px 5px 18px;
 }
 
 .community-wrap li p {font-size: var(--font-extrasmall);}
@@ -113,7 +117,6 @@ footer .lowerFoot p.customer_insure em {display: none;}
 
 
 @media screen and (max-width: 680px) {
-section {margin: 40px auto 45px auto; }
 .slider > li > .desc {
   margin-top: 18px;
   margin-left: 18px;
@@ -132,7 +135,6 @@ section {margin: 40px auto 45px auto; }
   width:48%;
 }
 
-
 #section4 {padding-bottom:40%;}
 
 /* 공통 배너 타이틀  */
@@ -145,10 +147,16 @@ section {margin: 40px auto 45px auto; }
   font-size: var(--font-small);
 }
 
-.link__btn {
+.link__btns {
   font-size: var(--font-small);
-  padding: 7px 18px;
+  padding: 7px 18px 5px 18px;
 }
+
+.slam__btn{
+  font-size: var(--font-small);
+  padding: 7px 18px 5px 18px;
+}
+
 footer > .upperFoot {
   padding: 10px 0;}
 
@@ -158,7 +166,7 @@ footer > .upperFoot {
 .upperFoot .container, 
 .lowerFoot .container {
   flex-direction: column; 
-  width: 100%; padding: 0;
+  width: 100%; padding: 0 20px;
 }
 
 .upperFoot .container h5{
@@ -182,8 +190,6 @@ footer .lowerFoot p.customer_insure{width: 100%; margin: 5px 0;}
 
 
 @media screen and (max-width: 480px) {
-section {margin: 30px auto; }
-
 .main-slide {
   width: 100%;
   min-height: 250px;
@@ -198,9 +204,9 @@ section {margin: 30px auto; }
   font-size: var(--font-extrasmall);
 }
 
-.link__btn {
+.link__btns {
   font-size: var(--font-micro);
-  padding: 7px 18px;
+  padding: 7px 18px 5px 18px;
 }
 
 .nav__right {width: 30%;}
@@ -241,6 +247,12 @@ input[type="search"]::placeholder {
 #section5 {padding-bottom: 0px;}
 #section5 .unique-img {padding-bottom: 50%;}
 #section7 {padding-bottom: 60%;}
+
+.slam__btn{
+  padding: 8px 10px 6px 10px;
+  font-size: var(--font-micro);
+}
+
 .renew-wrap > ul > li:nth-child(n+1){
   display: none;}
 

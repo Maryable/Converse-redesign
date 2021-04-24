@@ -1,27 +1,11 @@
 'use strict'
 
 $(function(){
-  // 메인 슬라이드 버튼 호버 애니메이션 
-  $('.link__btn').hover(()=> {
-    $('.link__btn').addClass('activeBtn');
+  //버튼 호버 애니메이션 
+  $('.link__btns').hover(()=> {
+    $(this).addClass('activeBtn');
   }, ()=> {
-    $('.link__btn').removeClass('activeBtn');
-  });
-
-  // 햄버거버튼 ==== 모바일 상세메뉴
-  $('.hamburger').on('click', ()=> {
-    $('nav').css({'right':'0'}).addClass('active').fadeIn();
-    $('.gnb li:nth-child(n+2)').css('display', 'block');
-    $('.search_wrap').removeClass('active');
-  });
-
-  $('.nav button.close').on('click', ()=> {
-    $('nav').removeClass('active');
-    $('.gnb li:nth-child(n+2)').css('display', 'none');
-  });
-  
-  $('.nav__item.search').click(function(){
-    $('.search_wrap').toggleClass('active')
+    $(this).removeClass('activeBtn');
   });
 
   // new arrival slider
@@ -30,7 +14,8 @@ $(function(){
       el: '.swiper-scrollbar',
       hide: true,
     }, 
-    slidesPerView: 2,
+    slidesPerView: 2,  
+    speed: 600,
     spaceBetween: 16,
     pagination: {
     el: '.swiper-pagination',
@@ -68,10 +53,31 @@ $(function(){
     }
   });
 
+}); //제이쿼리 끝
 
 
+const ScrollUp = document.querySelector('#scroll__up');
+const ScrollDown = document.querySelector('#scroll__down');
+// let top = window.offsetTop
+ScrollUp.addEventListener('click', ()=>{
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
 });
 
+ScrollDown.addEventListener('click',()=>{
+  window.scrollBy({
+    top: 450,
+    behavior:'smooth'
+  });
+});
+
+
+// const TagA = document.querySelectorAll('.link__btn');
+//   TagA.addEventListener('click', ()=>{
+//     e.preventDfault();
+//   });
 
 // New Arrival 슬라이드 움직이기 
 // const newPrev = document.querySelector('.new-prev');
