@@ -10,7 +10,7 @@ section {
 .main-slide {
   width: 100%;
   min-height: 300px;
-  padding-bottom: 45%;
+  padding-bottom: 42%;
   background: url("../imgs/main-slide.jpg") center/cover no-repeat;
 }
 
@@ -220,7 +220,7 @@ section {
 
 /* 꼼데가르송 comming soon  */
 #section4 {
-  padding-bottom:34%; position: relative;
+  padding-bottom:32%; position: relative;
   background: url("../imgs/COMING_SOON.jpg") center/cover no-repeat;
 }
 

@@ -164,7 +164,7 @@
     box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
   }
-  .navbar.show .menu-list{left: 0%;}
+  .navbar.show .menu-list{left: 0%; top: 0px;}
   .navbar .menu-list li{padding: 18px;}
   .navbar .menu-list li a:hover{color: #999999; cursor: pointer;}
   .navbar .menu-list li a{
@@ -211,7 +211,7 @@
         <a href="#" tabindex="1"><img src="./imgs/main-logo.svg" alt="main logo"></a>
       </h1>
       <ul class="menu-list">
-        <div class="icon cancel-btn"><i class="xi-close-thin"></i></div>
+        <li><div class="icon cancel-btn"><i class="xi-close-thin"></i></div></li>
         <li><h2 class="mobile__logo"><img src="./imgs/mobile_logo.svg" alt="mobile logo"></h2></li>
         <li><a href="#">신발</a></li>
         <li><a href="#">의류</a></li>
@@ -219,7 +219,7 @@
         <li><a href="#">런칭캘린더</a></li>
         <li><a href="#">회원전용</a></li>
         <li class="mobile__list" style="padding: 18px 0px;">
-          <ul class="mobile_menu">
+          <ul class="mobile_menu" style="padding: 0;">
             <li><a href="#">마이페이지 <i class="xi-angle-right-min"></i></a></li>
             <li><a href="#">주문/배송조회 <i class="xi-angle-right-min"></i></a></li>
             <li><a href="#">고객지원센터 <i class="xi-angle-right-min"></i></a></li>
@@ -235,7 +235,7 @@
           <li class="icon cart"><a href="#"><img src="./imgs/cart.svg" alt="cart icon"></a></li>
           <li class="icon hide favorite"><a href="#"><img src="./imgs/heart.svg" alt="favorite icon"></a></li>
           <li class="icon hide help"><a href="#"><img src="./imgs/help-circle.svg" alt="help icon"></a></li>
-          <li class="icon hamburger"><img src="./imgs/hamburger_bar.svg" alt="help icon"></a></li>
+          <li class="icon hamburger"><a href="#"><img src="./imgs/hamburger_bar.svg" alt="help icon"></a></li>
         </ul> <!-- user__menu -->
 
         <div class="search_wrap">

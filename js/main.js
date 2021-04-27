@@ -1,5 +1,3 @@
-'use strict'
-
 $(function(){
   //버튼 호버 애니메이션 
   $('.link__btns').hover(()=> {
